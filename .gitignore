@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# local data (leads + settings + your API key)
+/data
+
+# misc
+.DS_Store
+*.log
+.env*.local
