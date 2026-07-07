@@ -8,7 +8,13 @@
 # local data (leads + settings + your API key)
 /data
 
+# content agent generated media (delivered via Telegram / Actions artifacts)
+/content-agent/output
+
 # misc
 .DS_Store
 *.log
 .env*.local
+
+# python
+__pycache__/
