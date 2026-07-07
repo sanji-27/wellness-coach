@@ -128,9 +128,9 @@ export default function CanvaApp() {
         try {
           const match = json.text.match(/\[[\s\S]*\]/);
           if (match) setSlides(JSON.parse(match[0]));
-          else setSlides([{ slide: 1, headline: goal, body: json.text, cta: "Join free 7 PM Zoom →" }]);
+          else setSlides([{ slide: 1, headline: goal, body: json.text, cta: "Join free 6 PM Zoom →" }]);
         } catch {
-          setSlides([{ slide: 1, headline: goal, body: json.text, cta: "Join free 7 PM Zoom →" }]);
+          setSlides([{ slide: 1, headline: goal, body: json.text, cta: "Join free 6 PM Zoom →" }]);
         }
       } else {
         flash(json.error || "Claude error.", false);

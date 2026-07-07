@@ -1,4 +1,4 @@
-# 🌱 Wellness Coach — Free 7 PM Zoom Sessions
+# 🌱 Wellness Coach — Free 6 PM Zoom Sessions
 
 A complete web app for a nutrition & wellness coach:
 

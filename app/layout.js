@@ -16,9 +16,9 @@ const body = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Wellness Coach — Free 7 PM Zoom Sessions",
+  title: "Wellness Coach — Free 6 PM Zoom Sessions",
   description:
-    "Free daily 7 PM Zoom wellness sessions with a certified nutrition & wellness coach. Weight loss, weight gain, immunity, digestion, skin health & a healthier lifestyle.",
+    "Free daily 6 PM Zoom wellness sessions with a certified nutrition & wellness coach. Weight loss, weight gain, immunity, digestion, skin health & a healthier lifestyle.",
 };
 
 export const viewport = {

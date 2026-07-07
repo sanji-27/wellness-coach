@@ -24,7 +24,7 @@ const GOAL_CARDS = [
 const STEPS = [
   { n: "01", t: "Pick your goal", d: "Tell us what you want to achieve in 30 seconds." },
   { n: "02", t: "Get the Zoom link", d: "We send your private link on WhatsApp / email." },
-  { n: "03", t: "Join at 7 PM", d: "Hop on the free live session and get your plan." },
+  { n: "03", t: "Join at 6 PM", d: "Hop on the free live session and get your plan." },
 ];
 
 const fadeUp = {
@@ -102,7 +102,7 @@ export default function Landing() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-leaf opacity-75" />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-leaf" />
               </span>
-              Free Zoom Session · 7 PM Daily
+              Free Zoom Session · 6 PM Daily
             </motion.div>
 
             <motion.h1
@@ -123,7 +123,7 @@ export default function Landing() {
               animate="show"
               className="mt-5 max-w-md text-lg text-forest/80"
             >
-              Join a certified nutrition coach live on Zoom — every night at 7 PM.
+              Join a certified nutrition coach live on Zoom — every night at 6 PM.
               Personalised guidance for weight, immunity, digestion, skin & a
               healthier lifestyle. 100% free.
             </motion.p>
@@ -171,7 +171,7 @@ export default function Landing() {
                 </div>
                 <h3 className="font-display text-2xl font-bold">You're in! 🎉</h3>
                 <p className="mt-2 text-forest/80">
-                  We'll send your private 7 PM Zoom link to <b>{form.contact}</b> shortly.
+                  We'll send your private 6 PM Zoom link to <b>{form.contact}</b> shortly.
                   Check your messages!
                 </p>
                 <button
@@ -299,7 +299,7 @@ export default function Landing() {
         <SectionHeading kicker="Real results" title="People are thriving" />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {[
-            { n: "Anjali R.", g: "Weight Loss", q: "Lost 6 kg in two months without ever feeling hungry. The 7 PM sessions kept me accountable!" },
+            { n: "Anjali R.", g: "Weight Loss", q: "Lost 6 kg in two months without ever feeling hungry. The 6 PM sessions kept me accountable!" },
             { n: "Rahul M.", g: "Digestive Health", q: "My bloating is completely gone. I actually look forward to the live calls every night." },
             { n: "Sneha K.", g: "Skin Health", q: "My skin is glowing and I feel lighter. Can't believe this is free!" },
           ].map((t, i) => (
@@ -328,7 +328,7 @@ export default function Landing() {
           <div className="blob left-10 top-0 h-48 w-48 bg-lime" />
           <div className="relative z-10">
             <h2 className="font-display text-3xl font-extrabold sm:text-4xl">
-              Your free seat for <span className="shine-text">tonight's 7 PM</span> session is waiting.
+              Your free seat for <span className="shine-text">tonight's 6 PM</span> session is waiting.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-forest/80">
               Join thousands building healthier bodies — one evening at a time. No fees, no pressure.
@@ -347,7 +347,7 @@ export default function Landing() {
       <footer className="border-t border-leaf/10 bg-mint">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-forest/70 sm:flex-row">
           <div className="font-display font-bold text-ink">🌱 Wellness Coach</div>
-          <p>© {new Date().getFullYear()} Wellness Coach. Free daily 7 PM Zoom sessions.</p>
+          <p>© {new Date().getFullYear()} Wellness Coach. Free daily 6 PM Zoom sessions.</p>
           <a href="/admin" className="text-forest/50 transition hover:text-leaf">Coach Login</a>
         </div>
       </footer>
