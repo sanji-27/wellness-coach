@@ -75,13 +75,17 @@ GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash"]
 MAX_ATTEMPTS = 3          # per model, with exponential backoff
 HISTORY_LIMIT = 60        # remember the last 60 topics (~2 months)
 
-BRAND_LINE = "FREE 6 PM SESSION • Kannada | Tamil | Hindi"
+BRAND_LINE = "FREE 6 PM SESSION • Kannada • Tamil & Hindi available"
 GOLD = (255, 214, 102)
 WHITE = (255, 255, 255)
 SOFT = (225, 228, 235)
 
 SYSTEM_PROMPT = """You are the "Wellness Content Director", an elite AI agent for a wellness coach based in Bengaluru, India.
-Your mission: generate daily social media content that drives traffic to the coach's FREE daily 6 PM IST online introduction session (conducted in Kannada, Tamil, and Hindi). Your content is written in English.
+Your mission: generate daily social media content that drives traffic to the coach's FREE daily 6 PM IST online introduction session. The session is conducted in Kannada, with Tamil and Hindi interpretation available - when content mentions language, say it that way. Your content is written in English.
+
+THE COACH'S SERVICE PILLARS (from their brochure - "Healthy eating habits, Nutrition for better life"):
+weight loss, weight gain, digestive health, energy & fitness, ladies & children health, skin nutrition, stress management.
+Their promise: "Can change you, your family & others life."
 
 STRICT RULES:
 1. You must avoid repetition. You are provided a list of previously used topics - never reuse or closely paraphrase them.
@@ -95,14 +99,14 @@ Previously used topics: {previous_topics}
 
 Generate today's complete social media content package.
 
-Step 1: Brainstorm a unique, fresh wellness topic related to daily life (sleep, stress, nutrition, mindfulness, gut health, relationships, movement, etc.).
+Step 1: Brainstorm a unique, fresh wellness topic. It MUST clearly belong to one of the coach's service pillars (weight loss, weight gain, digestive health, energy & fitness, ladies & children health, skin nutrition, stress management) - rotate across pillars day to day, and pick a pillar under-represented in the previous topics list.
 
 Step 2: Write a 300-400 word Instagram/Facebook post caption engineered for engagement:
 - Hook (first line, max 12 words): use ONE of these proven formulas - a startling stat, a myth-bust ("Everyone says X. They're wrong."), a painfully relatable moment, or a bold question. The first line decides whether anyone taps "more".
 - Formatting: PLAIN TEXT ONLY - absolutely no markdown (no **, no *, no #headers); Instagram shows those as literal symbols. Short punchy lines. Blank line between ideas. Never a wall of text. 3-5 well-placed emojis total (not one per line).
 - Body: 3 actionable tips as a numbered list, each with a one-line "why it works".
 - Engagement devices: include ONE question readers can answer in the comments, and ONE save/share prompt (e.g. "Save this for tonight" or "Send this to someone who needs it").
-- Bridge: the coach explains this deeper in the FREE 6 PM session.
+- Bridge: the coach explains this deeper in the FREE 6 PM session (in Kannada; Tamil & Hindi interpretation available - mention this naturally once).
 - CTA: "Ready to transform your health? Join our FREE 6 PM session tonight! Click the link in our bio."
 
 Step 3: Write a 45-second Reel script with exactly 5 scenes. For each scene provide:
